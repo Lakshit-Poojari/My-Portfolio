@@ -1,0 +1,42 @@
+/* Certification */
+.cert-link a{
+  text-decoration: none;
+  color: white ;
+}
+
+/* Certification */
+.cert-link a{
+  font-size: 2rem;
+  font-weight: bold;
+  animation: colorCycle 5s linear infinite;
+}
+
+/* Certification */
+@keyframes colorCycle {
+  /* 0%   { color: rgb(11, 190, 225); }
+  25%  { color: rgb(227, 150, 27); }
+  50%  { color: rgb(232, 47, 130); }
+  75%  { color: rgb(232, 232, 38); }
+  100% { color: rgb(19, 209, 238); } */
+
+  0%   { color: rgb(0, 240, 255); }   /* Neon Cyan */
+  25%  { color: rgb(255, 46, 245); }  /* Neon Pink */
+  50%  { color: rgb(255, 122, 0); }   /* Neon Orange */
+  75%  { color: rgb(174, 255, 0); }   /* Neon Lime */
+  100% { color: rgb(0, 240, 255); }
+}
+
+/* Certification */
+.certification-text h4{
+  text-align: justify !important;
+}
+
+@media (max-width:499.98px){
+  .certification-text h4{
+    font-size: 18px !important;
+  }
+
+  .cert-link a{
+    font-size: 18px !important;
+  }
+}

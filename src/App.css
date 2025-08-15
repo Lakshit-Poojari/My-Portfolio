@@ -1,0 +1,52 @@
+*{
+  box-sizing: border-box;
+    /* font-family: "Ubuntu", sans-serif; */
+  /* font-weight: 200;
+  font-style: normal; */
+}
+
+.f-left{
+  float: left;
+}
+:root{
+  --Background: #0A0E1A;
+}
+
+
+
+.Portfolio{
+  background-image:linear-gradient(rgba(0, 0, 0, 0.601),rgba(0, 0, 0, 0.613)), url("../src/assets/images/background.jpg") !important;
+  color: white;
+  font-family: 'Libertinus Serif', serif !important;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+h1{
+  color: #00F0FF;
+}
+
+span {
+    color: #00F0FF; /*neon cyan */
+  font-weight: bold;
+}
+span:nth-child(2n) {
+  color: #ff2ef5; /* neon magenta for variety*/
+}
+/* About me */
+
+
+
+
+/* Skills */
+
+
+
+
+
+
+
+
+

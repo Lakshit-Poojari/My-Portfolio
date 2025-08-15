@@ -1,0 +1,89 @@
+/* Section background and spacing */
+.project-section {
+  background-color: #111827; /* dark theme background */
+  padding: 60px 20px;
+  color: white;
+}
+
+/* Heading */
+.project-section .project {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+}
+
+/* Card styling */
+.card {
+  background-color: rgba(20, 20, 20, 0.85); /* dark gray */
+  border: none;
+  border-radius: 12px;
+  height: auto;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid #00e6e6 !important;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+
+/* Image */
+.card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Card body */
+.card-body {
+  padding: 20px;
+}
+
+.card-title {
+
+  margin-bottom: 10px;
+}
+
+.card-text {
+  color: #d1d5db;
+  margin-bottom: 15px;
+}
+
+/* Button */
+.btn {
+  background-color: transparent;
+  border: 1px solid white;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+  color: white;
+}
+
+.btn:hover {
+  background: linear-gradient(90deg, #00F0FF, #FF2EF5);
+}
+
+.card img{
+  width: 95%;
+  height: auto;
+  align-items: center;
+}
+
+.card p{
+  font-size: 20px;
+  text-align: justify !important;
+}
+
+.card h3{
+  color:  #FF2EF5;
+}
+
+.proimg{
+  margin: 5px;
+}
+
+@media (max-width:499.98px){
+  .project{
+    margin-top: 100px !important;
+  }
+}
