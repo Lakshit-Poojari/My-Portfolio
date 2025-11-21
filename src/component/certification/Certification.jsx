@@ -3,7 +3,7 @@ import '../certification/Certification.css'
 
 function Certification() {
   return (
-    <div className="container">
+    <div className="container mt-5">
       <h1 className='certification mt-5 text-center'>Certification</h1>
       <div className='certification-text mt-5'>
         <h4>Here are the certifications I’ve earned, highlighting my expertise in both front-end development 

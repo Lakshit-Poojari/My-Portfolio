@@ -3,12 +3,16 @@
   height: 320px !important;
   border-radius: 15px;
   /* width: 30% !important; */
-  background-color: #1a1a1a; /* Dark background for contrast */
+  background-color: #1a1a1a !important; /* Dark background for contrast */
   /* border-radius: 10px; */
   /* padding: 15px; */
   border: 1px solid #00e6e6 !important;
   width: 100% !important;
   padding: 0;
+}
+
+.Background {
+  color: #00F0FF;
 }
 
 .card p{
@@ -21,7 +25,7 @@
 }
 
  h2 {
-  color: #00e6e6; /* Aqua-like glow color */
+  color: #00e6e6 !important; /* Aqua-like glow color */
   /* text-shadow: 0 0 5px #00e6e6, 
                0 0 10px #00e6e6, 
                0 0 20px #00e6e6, 

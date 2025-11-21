@@ -22,6 +22,10 @@ box-shadow: 0 0 10px #FF2EF5, 0 0 20px #00F0FF;
 
 }
 
+.contact {
+  color: #00F0FF;
+}
+
 /* contact */
 .text-area{
   /* background-color: rgb(52, 49, 49); */
@@ -60,7 +64,7 @@ box-shadow: 0 0 10px #FF2EF5, 0 0 20px #00F0FF;
   
   border: 1px solid white;
   padding: 5px 30px;
-  border-radius: 20px;
+  border-radius: 20px !important;
   color: white !important; 
  } 
 

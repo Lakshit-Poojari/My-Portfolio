@@ -12,13 +12,13 @@ import Contact from '../contact/Contact'
 function Introduction() {
   return (
     <>
-    <div className="container Introduction">
-        <div className="row">
-            <div className="col-12 col-lg-6   order-2 order-lg-1">
-              <h2 className="text-center mt-2">Hello and Welcome!</h2>
-                <h2 className="text-center mt-3"> I'm <span >Lakshit </span><span> Poojari</span></h2>
+    <div className="container Introduction ">
+        <div className="row mt-5">
+            <div className="col-12 col-lg-6  mt-5 order-2 order-lg-1">
+              <h2 className="text-center mt-5">Hello and Welcome!</h2>
+                <h2 className="text-center mt-5"> I'm <span >Lakshit </span><span> Poojari</span></h2>
                 <p className="text-center mt-5"><span>Passionate Developer </span>|<span> Creative Thinker </span>|<span> Lifelong Learner</span></p><br />
-                <p className="text-center mt-3">Welcome to my own portfolio — a place where I highlight my work, chronicle my journey, and 
+                <p className="text-center mt-5">Welcome to my own portfolio — a place where I highlight my work, chronicle my journey, and 
                   share my enthusiasm for technology and innovation.</p>
                 <p className="text-center mt-3">Have a look around, browse my projects, and learn about the mind that crafts the code.
                   I look forward to connecting, working together, and making something meaningful.</p>
@@ -29,12 +29,12 @@ function Introduction() {
             </div>
         </div>
     </div>
-          <AboutMe/>
+          {/* <AboutMe/>
           <Background/>
           <Skills/>
           <Project/>
           <Certification/>
-          <Contact/>
+          <Contact/> */}
     </>
   )
 }

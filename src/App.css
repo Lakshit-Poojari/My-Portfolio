@@ -37,7 +37,9 @@ span:nth-child(2n) {
 }
 /* About me */
 
-
+html {
+  scroll-behavior: smooth;
+}
 
 
 /* Skills */

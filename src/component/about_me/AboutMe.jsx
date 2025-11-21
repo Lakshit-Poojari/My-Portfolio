@@ -4,8 +4,8 @@ import about_me_icon from '../../assets/images/abouticon.png'
 
 function AboutMe() {
   return (
-    <div className='container'>
-      <h1 className=' about-head text-center mt-2'>About Me</h1>
+    <div className='container mt-5'>
+      <h1 className=' about-head text-center mt-5'>About Me</h1>
         <div className='row'>
 
             <div className='col-12 col-lg-6 mt-3 d-flex align-items-center justify-content-center '>

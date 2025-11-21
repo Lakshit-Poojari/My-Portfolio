@@ -25,6 +25,10 @@ img{
   height: 100px;
 }
 
+.skill-head {
+  color: #00F0FF;
+}
+
 .text {
   color: white !important;
 }

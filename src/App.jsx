@@ -19,32 +19,65 @@ function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-    <div className='Portfolio'>
-      <BrowserRouter>
-        <Navbars/>
-        <Routes>
-          <Route path="/" element={<Introduction/>}/>
-          <Route path="/AboutMe" element={<AboutMe/>}/>
-          <Route path="/skills" element={<Skills/>}/>
-          <Route path="/background" element={<Background/>}/>
-          <Route path="/certification" element={<Certification/>}/>
-          <Route path="/project" element={<Project/>}/>
-          <Route path="/contact" element={<Contact/>}/>
+    // <>
+    // <div className='Portfolio'>
+    //   <BrowserRouter>
+    //     <Navbars/>
+    //     <Routes>
+    //       <Route path="/" element={<Introduction/>}/>
+    //       <Route path="/AboutMe" element={<AboutMe/>}/>
+    //       <Route path="/skills" element={<Skills/>}/>
+    //       <Route path="/background" element={<Background/>}/>
+    //       <Route path="/certification" element={<Certification/>}/>
+    //       <Route path="/project" element={<Project/>}/>
+    //       <Route path="/contact" element={<Contact/>}/>
           
-          {/* <Introduction/>
-          <AboutMe/>
-          <Background/>
-          <Skills/>
-          <Project/>
-          <Certification/>
-          <Contact/> */}
-        </Routes>
-        <Footer/>
-      </BrowserRouter>
+    //       {/* <Introduction/>
+    //       <AboutMe/>
+    //       <Background/>
+    //       <Skills/>
+    //       <Project/>
+    //       <Certification/>
+    //       <Contact/> */}
+    //     </Routes>
+    //     <Footer/>
+    //   </BrowserRouter>
       
+    // </div>
+    // </>
+     <div className="Portfolio">
+      <Navbars />
+
+      <section id="home">
+        <Introduction />
+      </section>
+      
+      <section id="about">
+        <AboutMe />
+      </section> 
+
+      <section id="background">
+        <Background />
+      </section>
+
+      <section id="skills">
+        <Skills />
+      </section>
+
+      <section id="projects">
+        <Project />
+      </section>
+
+      <section id="certifications">
+        <Certification />
+      </section>
+
+      <section id="contact">
+        <Contact />
+      </section>
+
+      <Footer />
     </div>
-    </>
   )
 }
 

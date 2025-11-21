@@ -16,7 +16,7 @@ function Contact() {
       <Skills/>
       <Project/>
       <Certification/> */}
-    <div className='container contactMain'>
+    <div className='container contactMain mt-5'>
       <h1 className='contact mt-5 text-center'>Contact</h1>
       <div className='row'>
         <div className='d-flex justify-content-center text-center col-12 col-lg-6 mt-5'>
@@ -40,19 +40,19 @@ function Contact() {
               <p>I'm always open to connecting, collaborating, or discussing new opportunities. Feel free to reach out through any of the following:</p>
             </div>
             <div className=' contact_method mt-3'>
-              <a href='tel:24357786756767'><i class="fa-solid fa-phone f-left"></i>: +91-9869620509</a>
+              <a href='tel:9869620509'><i className="fa-solid fa-phone f-left"></i>: +91-9869620509</a>
             </div>
             
             <div className='contact_method mt-3'>
-              <a href="https://www.linkedin.com/in/lakshit-poojari/" ><i class="fa-brands fa-linkedin "></i>: Linkedin Profile</a>
+              <a href="https://www.linkedin.com/in/lakshit-poojari/" ><i className="fa-brands fa-linkedin "></i>: Linkedin Profile</a>
             </div>
             
             <div className='contact_method mt-3 '>
-              <a href="https://github.com/Lakshit-Poojari"><i class="fa-brands fa-github"></i>: Github Profile</a>
+              <a href="https://github.com/Lakshit-Poojari"><i className="fa-brands fa-github"></i>: Github Profile</a>
             </div>
             
             <div className='contact_method mt-3 '>
-              <a href="mailto:lakshitp.2110@gmail.com"><i class="fa-solid fa-envelope"></i>: lakshitp.2110@gmail.com</a>
+              <a href="mailto:lakshitp.2110@gmail.com"><i className="fa-solid fa-envelope"></i>: lakshitp.2110@gmail.com</a>
             </div>
 
             <div className='mt-5 contact-text'>

@@ -19,6 +19,10 @@
   text-shadow: 0 0 8px #00f0ff;
 }
 
+.about-head {
+  color: #00F0FF;
+}
+
 .social-icons a {
   font-size: 1.3rem;
   margin: 0 8px;

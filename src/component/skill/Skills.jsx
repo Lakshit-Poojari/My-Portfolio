@@ -12,9 +12,9 @@ import '../skill/Skills.css'
 
 function Skills() {
   return (
-    <div className='container'>
+    <div className='container mt-5'>
       <div className="mt-5 text-center">
-        <h1 className='text-center mt-5'>Skills</h1>
+        <h1 className='text-center skill-head mt-5'>Skills</h1>
         <h4 className='text-center text text-muted mt-4'>
   A showcase of my technical skills, tools, and technologies I’ve mastered for building data-driven and interactive solutions.
 </h4>
@@ -45,7 +45,7 @@ function Skills() {
           </div>
         
           <div className='SQL col-12 col-sm-6 col-lg-3 '>
-            <i class="fa-solid fa-database "></i> 
+            <i className="fa-solid fa-database "></i> 
             <h3 className='mt-2 SQL-text'>SQL</h3>
           </div>
           

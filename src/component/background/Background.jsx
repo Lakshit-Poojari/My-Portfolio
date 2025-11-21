@@ -4,8 +4,8 @@ import '../background/Background.css'
 function Background() {
   return (
     
-      <div className="container">    
-        <h1 className='mt-2 text-center'>Educational Background</h1>
+      <div className="container mt-5">    
+        <h1 className='mt-2 text-center Background'>Educational Background</h1>
         <div className="row mt-5">
           <div className=' edu col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 text-center mt-3'>
             <div className='card educard'>
