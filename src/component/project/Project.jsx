@@ -12,12 +12,12 @@ const projects =[
 
 function Project() {
   return (
-    <div className='container mt-5'>
+    <div className='container my-5'>
       <h1 className='project my-5 text-center'>Project</h1>
       <div className='row'>
         
           {projects.map ((projects,index) =>(
-            <div key={index} className='col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 mt-3'>
+            <div key={index} className='col-12 col-sm-12 col-md-12 col-lg-4 col-xl-4 col-xxl-4 my-3'>
             <div className='card projectcard'>
               <img src={projects.Img} alt='thumb nail' className='proimg mx-auto d-block'></img>
               <div className='card-body'>
