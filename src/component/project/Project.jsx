@@ -13,7 +13,7 @@ const projects =[
 function Project() {
   return (
     <div className='container mt-5'>
-      <h1 className='project mt-5 text-center'>Project</h1>
+      <h1 className='project my-5 text-center'>Project</h1>
       <div className='row'>
         
           {projects.map ((projects,index) =>(
