@@ -24,7 +24,8 @@ function Contact() {
 
     try {
       const response = await axios.post(
-      "http://127.0.0.1:8000/api/contact/",
+        "https://my-portfolio-c68z.onrender.com/api/contact/",
+      // "http://127.0.0.1:8000/api/contact/",
       formdata,
       {
         headers: {
