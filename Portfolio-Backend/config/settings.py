@@ -33,10 +33,15 @@ ALLOWED_HOSTS = ['*']
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:5173",
-    "https://my-portfolio-1-8zu9.onrender.com"
+    # "https://my-portfolio-1-8zu9.onrender.com"
+    "https://lakshit-poojari-portfolio.netlify.app"
 ]
 
+CORS_ALLOW_ALL_ORIGINS = True   # temporary test
 
+CSRF_TRUSTED_ORIGINS = [
+    "https://lakshit-poojari-portfolio.netlify.app",
+]
 # Application definition
 
 INSTALLED_APPS = [
