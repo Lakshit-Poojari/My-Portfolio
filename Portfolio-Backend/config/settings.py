@@ -37,7 +37,9 @@ CORS_ALLOWED_ORIGINS = [
     # "https://lakshit-poojari-portfolio.netlify.app"
 ]
 
-CORS_ALLOW_ALL_ORIGINS = True   # temporary test
+# CORS_ALLOW_ALL_ORIGINS = True    temporary test
+
+CORS_ALLOW_CREDENTIALS = True
 
 CSRF_TRUSTED_ORIGINS = [
     "https://my-portfolio-1-8zu9.onrender.com",
