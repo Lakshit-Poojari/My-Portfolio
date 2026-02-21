@@ -1,0 +1,41 @@
+.footer {
+  background: linear-gradient(90deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  height: 200px;
+}
+
+.footer-links a {
+  color: #bbb;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.footer-links a:hover {
+  color: #fff;
+  text-shadow: 0 0 8px #00f0ff;
+}
+
+.about-head {
+  color: #00F0FF;
+}
+
+.social-icons a {
+  font-size: 1.3rem;
+  margin: 0 8px;
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+    text-shadow: 0 0 10px #00f0ff;
+}
+
+.social-icons i{
+    font-size: 25px;
+    color: white !important;
+    text-decoration: none;
+}
