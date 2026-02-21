@@ -15,7 +15,7 @@ def send_email_async(subject, body, sender, receiver):
         body,
         sender,
         receiver,
-        fail_silently=True,
+        fail_silently=False,
     )
 
 @api_view(['POST'])
