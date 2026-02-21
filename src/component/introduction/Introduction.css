@@ -1,0 +1,47 @@
+
+/* Introduction */
+.Introduction{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Introduction */
+.Introduction h1, .Introduction h2{
+  font-size: 50px;
+  color: white !important;
+}
+
+/* Introduction */
+.Introduction p{
+  font-size: 25px;
+  text-align: justify !important;
+}
+
+/* Introduction */
+.Profile{
+  height: 600px;
+  width: 600px;
+}
+
+
+.name{
+  color:#00F0FF;
+}
+
+@media (max-width:499.98px){
+  .Profile{
+  height: 250px ;
+  width: 400px ;
+}
+
+.Introduction h1, .Introduction h2{
+  font-size: 35px;
+  color: white !important;
+}
+
+.Introduction p{
+  font-size: 18px;
+  text-align: justify !important;
+}
+}
