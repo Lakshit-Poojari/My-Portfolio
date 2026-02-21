@@ -149,6 +149,7 @@ box-shadow: 0 0 10px #FF2EF5, 0 0 20px #00F0FF;
 .input:focus,.form:focus, .text-area:focus {
   border-color: #FF2EF5; /* switches to neon magenta */
   box-shadow: 0 0 8px #FF2EF5, 0 0 15px #00F0FF;
+  background-color: rgba(20, 20, 20, 0.85) !important;
 }
 
 .contact-text{

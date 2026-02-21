@@ -1,36 +1,82 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../contact/Contact.css'
-import Introduction from '../introduction/Introduction'
-import AboutMe from '../about_me/AboutMe'
-import Background from '../background/Background'
-import Skills from '../skill/Skills'
-import Project from '../project/Project'
-import Certification from '../certification/Certification'
+import axios from "axios";
 
 function Contact() {
+
+  const [formdata, setformdata] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    message: ""
+  })
+
+
+  const handleChange = (e) =>{
+    setformdata({
+      ...formdata,
+      [e.target.name] : e.target.value,
+    })
+  }
+
+  const handleSubmit = async (e) =>{
+    e.preventDefault();
+
+    try {
+      const response = await axios.post(
+      "http://127.0.0.1:8000/api/contact/",
+      formdata,
+      {
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+
+    alert("Message sent successfully ✅");
+
+    // clear form
+    setformdata({
+      name: "",
+      email: "",
+      phone: "",
+      message: "",
+    });
+    } catch (error) {
+      console.error(error);
+      alert("Failed to send message ❌");
+    }
+
+  }
+  
   return (
     <>
-      {/* <Introduction/>
-      <AboutMe/>
-      <Background/>
-      <Skills/>
-      <Project/>
-      <Certification/> */}
     <div className='container contactMain mt-5'>
       <h1 className='contact mt-5 text-center'>Contact</h1>
       <div className='row'>
         <div className='d-flex justify-content-center text-center col-12 col-lg-6 mt-5'>
           <div className='form'>
-            <form >
+            <form onSubmit={handleSubmit}>
               
-              <input type="text" className='input mt-4' placeholder="Enter your Name"/> <br />
+              <input  name="name"
+                      value={formdata.name}
+                      onChange={handleChange} type="text" className='input mt-4' placeholder="Enter your Name"/> <br />
               
-              <input type="email" className='input mt-4' placeholder="Enter your Email id"/><br />
+              <input  name="email"
+                      value={formdata.email}
+                      onChange={handleChange} type="email" className='input mt-4' placeholder="Enter your Email id"/><br />
 
-              <input type="tel" className='input mt-4' placeholder="Enter your Phone Number"/><br />
+              <input  name="phone"
+                      value={formdata.phone}
+                      onChange={handleChange} type="tel" className='input mt-4' placeholder="Enter your Phone Number"/><br />
               
-              <textarea rows="4" cols="50" className='text-area mt-4' placeholder="Enter your message here..."></textarea><br />
-              <button className='send btn text-center mt-2'>SEND</button>
+              <textarea name="message"
+                        value={formdata.message} 
+                        onChange={handleChange} 
+                        rows="4" cols="50" 
+                        className='text-area mt-4' 
+                        placeholder="Enter your message here..."></textarea><br />
+              <button type="submit" className='send btn text-center mt-2'>SEND</button>
             </form>
           </div>
         </div>
