@@ -59,15 +59,15 @@ function Contact() {
           <div className='form'>
             <form onSubmit={handleSubmit}>
               
-              <input  name="name"
+              <input  name="name" required
                       value={formdata.name}
                       onChange={handleChange} type="text" className='input mt-4' placeholder="Enter your Name"/> <br />
               
-              <input  name="email"
+              <input  name="email" required
                       value={formdata.email}
                       onChange={handleChange} type="email" className='input mt-4' placeholder="Enter your Email id"/><br />
 
-              <input  name="phone"
+              <input  name="phone" required
                       value={formdata.phone}
                       onChange={handleChange} type="tel" className='input mt-4' placeholder="Enter your Phone Number"/><br />
               
@@ -76,7 +76,7 @@ function Contact() {
                         onChange={handleChange} 
                         rows="4" cols="50" 
                         className='text-area mt-4' 
-                        placeholder="Enter your message here..."></textarea><br />
+                        placeholder="Enter your message here..." required></textarea><br />
               <button type="submit" className='send btn text-center mt-2'>SEND</button>
             </form>
           </div>
