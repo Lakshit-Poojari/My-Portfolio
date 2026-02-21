@@ -5,7 +5,18 @@ from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.parsers import JSONParser
 
+import threading
+
 # Create your views here.
+
+def send_email_async(subject, body, sender, receiver):
+    send_mail(
+        subject,
+        body,
+        sender,
+        receiver,
+        fail_silently=True,
+    )
 
 @api_view(['POST'])
 @parser_classes([JSONParser])
@@ -32,13 +43,23 @@ def contact(request):
             {message}
             """ 
 
-    send_mail(
-        subject=subject,
-        message=body,
-        from_email=settings.EMAIL_HOST_USER,
-        recipient_list=[settings.CONTACT_RECEIVER_EMAIL],
-        fail_silently=False,
-    )
+    # send_mail(
+    #     subject=subject,
+    #     message=body,
+    #     from_email=settings.EMAIL_HOST_USER,
+    #     recipient_list=[settings.CONTACT_RECEIVER_EMAIL],
+    #     fail_silently=False,
+    # )
+
+    threading.Thread(
+        target=send_email_async,
+        args=(
+            subject,
+            body,
+            settings.EMAIL_HOST_USER,
+            [settings.CONTACT_RECEIVER_EMAIL],
+        ),
+    ).start()
 
     return Response(
         {"success": "Message sent successfully"},
