@@ -14,7 +14,7 @@ import github from '../../assets/images/github.png'
 import mongodb from '../../assets/images/mongodb.png'
 import postman from '../../assets/images/postman.png'
 import ReactBootstrap from '../../assets/images/React-Bootstrap.png'
-import Thunder from '../../assets/images/Thunder client.png'
+import Thunder from '../../assets/images/Thunder-client.png'
 import vite from '../../assets/images/vite.png'
 import '../skill/Skills.css'
 
