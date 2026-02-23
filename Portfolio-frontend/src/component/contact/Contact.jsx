@@ -107,7 +107,7 @@ function Contact() {
             </div>
 
             <div className=''>
-              <a href="resume.pdf" target="_blank" rel="noopener noreferrer">
+              <a href="https://drive.google.com/drive/folders/18IT-MYNnqDoeFrEN-a0JgeRshqkNrUzh" target="_blank" rel="noopener noreferrer">
                 <button className='resume mt-4'>RESUME</button>
               </a>
               
