@@ -14,7 +14,7 @@ import github from '../../assets/images/github.png'
 import mongodb from '../../assets/images/mongodb.png'
 import postman from '../../assets/images/postman.png'
 import ReactBootstrap from '../../assets/images/React-Bootstrap.png'
-import Thunder from '../../assets/images/Thunder-client.png'
+// import Thunder from '../../assets/images/Thunder-client.png'
 import vite from '../../assets/images/vite.png'
 import '../skill/Skills.css'
 
@@ -76,9 +76,9 @@ function Skills() {
             <img src={ReactBootstrap} alt="ReactBootstrap" />
           </div>
 
-          <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center m-3" id='react'>
+          {/* <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center m-3" id='react'>
             <img src={Thunder} alt="Thunder" />
-          </div>
+          </div> */}
 
           <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center m-3" id='react'>
             <img src={vite} alt="vite" />
