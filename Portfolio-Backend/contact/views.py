@@ -11,7 +11,7 @@ import os
 # Create your views here.
 
 resend.api_key = os.getenv("RESEND_API_KEY")
-def send_email_async(subject, body, sender, receiver):
+def send_email_async(subject, body, receiver):
     # send_mail(
     #     subject,
     #     body,
