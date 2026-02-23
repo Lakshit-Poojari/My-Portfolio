@@ -8,6 +8,14 @@ import pandas from '../../assets/images/pandas.png'
 import reacts from '../../assets/images/react.png'
 import Sql from '../../assets/images/SQL.png'
 import powerbi from '../../assets/images/powerbi.png'
+import Django from '../../assets/images/Django.png'
+import git from '../../assets/images/git.png'
+import github from '../../assets/images/github.png'
+import mongodb from '../../assets/images/mongodb.png'
+import postman from '../../assets/images/postman.png'
+import ReactBootstrap from '../../assets/images/React-Bootstrap.png'
+import Thunder from '../../assets/images/Thunder client.png'
+import vite from '../../assets/images/vite.png'
 import '../skill/Skills.css'
 
 function Skills() {
@@ -42,6 +50,38 @@ function Skills() {
           
           <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center m-3" id='react'>
             <img src={reacts} alt="react" />
+          </div>
+
+          <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center m-3" id='react'>
+            <img src={Django} alt="Django" />
+          </div>
+
+          <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center m-3" id='react'>
+            <img src={git} alt="git" />
+          </div>
+          
+          <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center m-3" id='react'>
+            <img src={github} alt="github" />
+          </div>
+
+          <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center m-3" id='react'>
+            <img src={mongodb} alt="mongodb" />
+          </div>
+
+          <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center m-3" id='react'>
+            <img src={postman} alt="postman" />
+          </div>
+
+          <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center m-3" id='react'>
+            <img src={ReactBootstrap} alt="ReactBootstrap" />
+          </div>
+
+          <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center m-3" id='react'>
+            <img src={Thunder} alt="Thunder" />
+          </div>
+
+          <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center m-3" id='react'>
+            <img src={vite} alt="vite" />
           </div>
         
           <div className='SQL col-12 col-sm-6 col-lg-3 m-3'>
