@@ -4,19 +4,33 @@ from rest_framework.decorators import api_view, parser_classes
 from rest_framework.response import Response
 from rest_framework import status
 from rest_framework.parsers import JSONParser
-
 import threading
+import resend
+import os
 
 # Create your views here.
 
+resend.api_key = os.getenv("RESEND_API_KEY")
 def send_email_async(subject, body, sender, receiver):
-    send_mail(
-        subject,
-        body,
-        sender,
-        receiver,
-        fail_silently=False,
-    )
+    # send_mail(
+    #     subject,
+    #     body,
+    #     sender,
+    #     receiver,
+    #     fail_silently=False,
+    # )
+
+    try:
+        resend.Emails.send({
+            "from": "Portfolio Contact <onboarding@resend.dev>",  # works without domain
+            "to": receiver,
+            "subject": subject,
+            "text": body,
+        })
+        print("✅ Email sent successfully via Resend")
+
+    except Exception as e:
+        print("❌ Email sending failed:", str(e))
 
 @api_view(['POST'])
 @parser_classes([JSONParser])
@@ -56,7 +70,7 @@ def contact(request):
         args=(
             subject,
             body,
-            settings.EMAIL_HOST_USER,
+            # settings.EMAIL_HOST_USER,
             [settings.CONTACT_RECEIVER_EMAIL],
         ),
     ).start()
