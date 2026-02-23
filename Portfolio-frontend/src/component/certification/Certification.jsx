@@ -15,7 +15,7 @@ function Certification() {
             standards in building responsive, user-friendly interfaces and transforming raw data into actionable 
             insights.</h4>
           <br />
-          <p className='cert-link '><a href="https://www.linkedin.com/in/lakshit-poojari/details/certifications/">👉 Click here to view my certifications! 👈</a></p>
+          <p className='cert-link '><a href="https://drive.google.com/drive/folders/1prWUzhnlhCOexjC3sEXVTX9VnlKnXyiE">👉 Click here to view my certifications! 👈</a></p>
       </div>
     </div>
   )
