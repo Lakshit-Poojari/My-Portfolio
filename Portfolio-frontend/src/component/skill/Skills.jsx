@@ -4,17 +4,14 @@ import css from '../../assets/images/css3.png'
 import bootstrap from '../../assets/images/bootstrap.png'
 import js from '../../assets/images/js.png'
 import python from '../../assets/images/python.png'
-import pandas from '../../assets/images/pandas.png'
 import reacts from '../../assets/images/react.png'
-import Sql from '../../assets/images/SQL.png'
 import powerbi from '../../assets/images/powerbi.png'
-import Django from '../../assets/images/Django.png'
+import Django from '../../assets/images/django.png'
 import git from '../../assets/images/git.png'
 import github from '../../assets/images/github.png'
 import mongodb from '../../assets/images/mongodb.png'
 import postman from '../../assets/images/postman.png'
-import ReactBootstrap from '../../assets/images/React-Bootstrap.png'
-// import Thunder from '../../assets/images/Thunder-client.png'
+import ReactBootstrap from '../../assets/images/reactbootstrap.png'
 import vite from '../../assets/images/vite.png'
 import '../skill/Skills.css'
 
@@ -75,10 +72,6 @@ function Skills() {
           <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center m-3" id='react'>
             <img src={ReactBootstrap} alt="ReactBootstrap" />
           </div>
-
-          {/* <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center m-3" id='react'>
-            <img src={Thunder} alt="Thunder" />
-          </div> */}
 
           <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center m-3" id='react'>
             <img src={vite} alt="vite" />
