@@ -13,9 +13,9 @@ import mongodb from "../../assets/images/mongodb.png";
 import postman from "../../assets/images/postman.png";
 import ReactBootstrap from "../../assets/images/reactbootstrap.png";
 import vite from "../../assets/images/vite.png";
-import Next from "../../assets/images/Next.png";
+import Next from "../../assets/images/nextjsi.webp";
 import express from "../../assets/images/express.png";
-import tailwind from "../../assets/images/tailwind.svg";
+import tailwind from "../../assets/images/tailwindcss.webp";
 import typescript from "../../assets/images/typescript.png";
 import "../skill/Skills.css";
 
@@ -45,16 +45,13 @@ function Skills() {
             <img src={js} alt="js" />
           </div>
 
-          <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center m-3">
-            <img src={Next} alt="Next" />
-          </div>
-
-          <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center m-3">
-            <img src={express} alt="express" />
-          </div>
-
-          <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center m-3">
-            <img src={tailwind} alt="tailwind" />
+          <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center ">
+            <img
+              src={tailwind}
+              alt="tailwind"
+              className="img-fluid"
+              style={{ width: "200px" }}
+            />
           </div>
 
           <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center m-3">
@@ -82,18 +79,19 @@ function Skills() {
             <img src={git} alt="git" />
           </div>
 
-          <div
-            className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center m-3"
-            id="react"
-          >
-            <img src={github} alt="github" />
+          <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center m-3">
+            <img src={Next} alt="Next" />
+          </div>
+
+          <div className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center m-3">
+            <img src={express} alt="express" />
           </div>
 
           <div
             className="col-12 col-sm-6 col-lg-3 d-flex justify-content-center m-3"
             id="react"
           >
-            <img src={mongodb} alt="mongodb" />
+            <img src={github} alt="github" />
           </div>
 
           <div

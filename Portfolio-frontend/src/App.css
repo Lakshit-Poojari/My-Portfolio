@@ -15,7 +15,7 @@
 
 
 .Portfolio{
-  background-image:linear-gradient(rgba(0, 0, 0, 0.601),rgba(0, 0, 0, 0.613)), url("../src/assets/images/background.jpg") !important;
+  background-image:linear-gradient(rgb(66, 66, 66),rgba(255, 255, 255, 0)), url("../src/assets/images/background.jpg") !important;
   color: white;
   font-family: 'Libertinus Serif', serif !important;
   background-repeat: no-repeat;
